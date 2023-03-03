@@ -8,6 +8,10 @@ module.exports = {
 				primary: '#222831',
 				secondary: '#393E46',
 				outline: '#00ADB5'
+			},
+			rounded: {
+				sm: '8px',
+				md: '10px'
 			}
 		}
 	},
