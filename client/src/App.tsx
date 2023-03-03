@@ -1,5 +1,6 @@
 import './App.css';
 import { Button, Input } from './Components';
+import Preview from './Components/Cards/Preview';
 
 function App() {
 	return (
@@ -14,6 +15,9 @@ function App() {
 						onChange={(e: React.ChangeEvent<HTMLInputElement>) => {}}
 					/>
 					<Button onClick={(e: React.MouseEvent<HTMLButtonElement>) => {}}>Search</Button>
+				</div>
+				<div className="w-full px-20">
+					<Preview />
 				</div>
 			</div>
 		</div>
