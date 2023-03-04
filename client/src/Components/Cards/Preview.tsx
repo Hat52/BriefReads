@@ -3,7 +3,7 @@ import { IPreview } from '../../model';
 
 export default function Preview({ name, author, publishedDate, description }: IPreview) {
 	return (
-		<div className="bg-[#393E4660] w-[300px] gap-4 h-[380px] rounded-md flex flex-col p-2 hover:scale-105 cursor-default transition-scale duration-500 ">
+		<div className="bg-[#393E4660] w-[300px] gap-4 h-[380px] rounded-md flex flex-col p-2 hover:scale-105 cursor-default transition-scale duration-500">
 			<img
 				src={Cover}
 				alt="book cover"
