@@ -1,6 +1,8 @@
 import './App.css';
 import { Button, Input } from './Components';
 import Preview from './Components/Cards/Preview';
+import { Books } from './constants';
+import { IPreview } from './model';
 
 function App() {
 	return (
@@ -16,8 +18,10 @@ function App() {
 					/>
 					<Button onClick={(e: React.MouseEvent<HTMLButtonElement>) => {}}>Search</Button>
 				</div>
-				<div className="w-full px-20">
-					<Preview />
+				<div className="w-full px-20 grid grid-cols-3 gap-5">
+					{Books.map((data: IPreview) => {
+						return <Preview {...data} />;
+					})}
 				</div>
 			</div>
 		</div>

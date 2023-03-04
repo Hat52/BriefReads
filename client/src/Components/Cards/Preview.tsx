@@ -1,6 +1,7 @@
 import Cover from '../../assets/Images/cover.jpg';
+import { IPreview } from '../../model';
 
-export default function Preview() {
+export default function Preview({ name, author, publishedDate, description }: IPreview) {
 	return (
 		<div className="bg-[#393E4660] w-[300px] gap-4 h-[380px] rounded-md flex flex-col p-2 hover:scale-105 cursor-default transition-scale duration-500 ">
 			<img
@@ -8,22 +9,13 @@ export default function Preview() {
 				alt="book cover"
 				className="w-full h-1/2 object-cover rounded-sm opacity-50"
 			/>
-			<h3 className="text-outline text-center text-lg -mt-3">Book Name</h3>
+			<h3 className="text-outline text-center text-lg -mt-3">{name}</h3>
 			<div className="flex flex-col gap-1">
-				<CardItem title="Author" description="Hamza Ali" />
-				<CardItem title="Published" description="may-2023" />
+				<CardItem title="Author" description={author} />
+				<CardItem title="Published" description={publishedDate} />
 			</div>
 			<div>
-				<p className="truncate-3-lines text-sm text-typography">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-					Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-					unknown printer took a galley of type and scrambled it to make a type specimen book.
-					It has survived not only five centuries, but also the leap into electronic
-					typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-					the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-					with desktop publishing software like Aldus PageMaker including versions of Lorem
-					Ipsum.
-				</p>
+				<p className="truncate-3-lines text-sm text-typography">{description}</p>
 			</div>
 		</div>
 	);
