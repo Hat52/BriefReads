@@ -2,12 +2,13 @@ import Cover from '../../assets/Images/cover.jpg';
 
 export default function Preview() {
 	return (
-		<div className="bg-[#393E4660] w-[300px] gap-4 h-[400px] rounded-md flex flex-col p-5">
+		<div className="bg-[#393E4660] w-[300px] gap-4 h-[380px] rounded-md flex flex-col p-2 hover:scale-105 cursor-default transition-scale duration-500 ">
 			<img
 				src={Cover}
 				alt="book cover"
-				className="w-full h-1/2 object-fill rounded-sm opacity-50"
+				className="w-full h-1/2 object-cover rounded-sm opacity-50"
 			/>
+			<h3 className="text-outline text-center text-lg -mt-3">Book Name</h3>
 			<div className="flex flex-col gap-1">
 				<CardItem title="Author" description="Hamza Ali" />
 				<CardItem title="Published" description="may-2023" />
