@@ -3,4 +3,5 @@ export interface IPreview {
 	author: string;
 	publishedDate: string;
 	description: string;
+	variant?: 'left' | 'center' | 'right';
 }

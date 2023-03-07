@@ -2,12 +2,12 @@ import { useState } from 'react';
 import Cover from '../../assets/Images/cover.jpg';
 import { IPreview } from '../../model';
 
-export default function Preview({ name, author, publishedDate, description }: IPreview) {
+export default function Preview({ name, author, publishedDate, description, variant }: IPreview) {
 	const [showCard, setShowCard] = useState(false);
 
 	return (
-		<div className={!showCard ? 'relative' : ''}>
-			<MainCard showCard={showCard} setShowCard={setShowCard} />
+		<div className="relative">
+			<MainCard showCard={showCard} setShowCard={setShowCard} variant={variant} />
 			<div
 				onClick={() => setShowCard(true)}
 				className="bg-[#393E4660] w-[300px] z-10 gap-4 h-[380px] rounded-md flex flex-col p-2 hover:scale-105 cursor-default transition-scale duration-500">
@@ -43,14 +43,21 @@ const CardItem = ({ title, description }: ICardItem) => {
 	);
 };
 
-const MainCard = ({ showCard, setShowCard }: any) => {
+const MainCard = ({ showCard, setShowCard, variant }: any) => {
+	const alignment =
+		variant === 'left'
+			? 'left-[100%] -translate-x-1/4'
+			: variant === 'center'
+			? 'left-1/2 -translate-x-1/2'
+			: '';
+
 	return (
 		<div
 			onClick={() => setShowCard(false)}
-			className={`absolute z-0 transition-all duration-500  ${
+			className={`absolute transition-all duration-500 ${
 				showCard
-					? 'w-[800px] h-[600px] z-20 top-1/2 left-1/2 transform  -translate-x-1/2 -translate-y-1/2 bg-secondary shadow-lg shadow-primary'
-					: ' w-[300px] h-[380px] bg-transparent'
+					? `w-[800px] h-[600px] z-20 top-1/2  transform right-[100%] translate-x-1/4  -translate-y-1/2 bg-secondary shadow-lg shadow-primary`
+					: 'w-[300px] z-0 bg-[blue] h-[380px] bg-transparent'
 			}`}></div>
 	);
 };
