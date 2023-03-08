@@ -18,7 +18,7 @@ function App() {
 					/>
 					<Button onClick={(e: React.MouseEvent<HTMLButtonElement>) => {}}>Search</Button>
 				</div>
-				<div className="w-full px-20 flex gap-10 flex-wrap pb-10">
+				<div className="w-full px-20 flex gap-10 flex-wrap pb-10 justify-center">
 					{Books.map((data: IPreview) => {
 						return <Preview {...data} />;
 					})}
