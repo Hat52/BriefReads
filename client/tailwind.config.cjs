@@ -7,6 +7,7 @@ module.exports = {
 				typography: '#EEEEEE',
 				primary: '#222831',
 				secondary: '#393E46',
+				secondaryFaded: '#393E4680',
 				outline: '#00ADB5'
 			},
 			rounded: {
