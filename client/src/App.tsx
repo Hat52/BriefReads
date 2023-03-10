@@ -30,9 +30,9 @@ export default App;
 
 const SummaryCard = () => {
 	return (
-		<div className="w-full px-2 py-1 shadow-sm bg-secondaryFaded shadow-outlineFaded h-max rounded-md hover:scale-105 transition-all duration-500">
+		<div className="w-full cursor-pointer px-2 py-1 shadow-sm bg-secondaryFaded shadow-outlineFaded h-max rounded-md hover:scale-105 transition-all duration-500">
 			<h6 className="font-semibold text-typography">Summary 1</h6>
-			<div className="flex text-outline justify-end gap-2">
+			<div className="flex text-outline justify-end gap-2 pointer-events-none">
 				<div className="flex items-center gap-1">
 					<span className="text-[10px]">24</span>
 					<AiOutlineLike />
