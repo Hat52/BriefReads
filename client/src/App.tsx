@@ -13,7 +13,7 @@ function App() {
 				<div className="flex w-[80vw] gap-5">
 					<div className="w-[15vw] h-[70vh] bg-secondaryFaded rounded-sm"></div>
 					<div className="w-[48vw] h-[70vh] bg-secondaryFaded rounded-sm"></div>
-					<div className="w-[15vw] gap-4 flex overflow-scroll scrollbar-hide flex-col h-[70vh] bg-transparent rounded-sm p-4 border border-outlineFaded shadow-md shadow-secondary">
+					<div className="w-[15vw] gap-4 flex overflow-scroll scrollbar-hide flex-col h-[70vh] bg-transparent rounded-sm p-4 shadow-md shadow-secondary">
 						{Array(20)
 							.fill(0)
 							.map(() => (
