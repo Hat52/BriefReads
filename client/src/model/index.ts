@@ -5,3 +5,9 @@ export interface IPreview {
 	description: string;
 	variant?: 'left' | 'center' | 'right';
 }
+
+export interface ISummaryCard {
+	name: string;
+	like: number;
+	dislike: number;
+}

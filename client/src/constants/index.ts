@@ -69,3 +69,36 @@ export const Books: IPreview[] = [
 		author: 'Hamza Ali'
 	}
 ];
+
+export const summaries = [
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	},
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	},
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	},
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	},
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	},
+	{
+		name: 'Book 1',
+		like: 20,
+		dislike: 5
+	}
+];
