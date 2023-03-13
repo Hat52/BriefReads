@@ -7,7 +7,7 @@ import { Read } from './Pages';
 
 function App() {
 	return (
-		<div className="App">
+		<div className="">
 			<Read />
 		</div>
 	);
